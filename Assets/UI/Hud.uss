@@ -1,0 +1,14 @@
+.hud {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    padding: 12px 16px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+}
+
+.hud__label {
+    color: white;
+    font-size: 22px;
+    -unity-font-style: bold;
+}

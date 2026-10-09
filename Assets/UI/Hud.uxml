@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Hud.uss" />
+    <ui:VisualElement name="hud" class="hud">
+        <ui:Label name="sail-opening-label" class="hud__label" text="Sail opening: 0%" />
+        <ui:Label name="sail-rotation-label" class="hud__label" text="Sail rotation: 0°" />
+    </ui:VisualElement>
+</ui:UXML>
