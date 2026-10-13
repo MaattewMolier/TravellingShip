@@ -7,7 +7,7 @@ namespace SailingDemo
     [RequireComponent(typeof(UIDocument))]
     public class ShipHud : MonoBehaviour
     {
-        [SerializeField] private ShipController _ship;
+        [SerializeField] private ShipBridge _ship;
 
         private Label _openingLabel;
         private Label _rotationLabel;

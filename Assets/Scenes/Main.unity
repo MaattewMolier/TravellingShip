@@ -119,6 +119,103 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &126915231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126915233}
+  - component: {fileID: 126915232}
+  m_Layer: 0
+  m_Name: ShipSubScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &126915232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126915231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a335734b1572644a6a5d09d87adc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Scenes::Unity.Scenes.SubScene
+  _SceneAsset: {fileID: 102900000, guid: bf329e6961356b44d9eb7513619ed0e7, type: 3}
+  _HierarchyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  AutoLoadScene: 1
+  _SceneGUID:
+    Value:
+      x: 2531861499
+      y: 1152799510
+      z: 827834013
+      w: 2114840854
+--- !u!4 &126915233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126915231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &127451192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127451193}
+  - component: {fileID: 127451194}
+  m_Layer: 0
+  m_Name: ShipProxy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127451193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127451192}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.81114, y: 1.5689, z: -11.07033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &127451194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127451192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c12c0cffe4df254e8ec31dd6dba2e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SailingDemo.ShipBridge
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f87d334c62dfd43962e3f953d58c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SailingDemo.FollowTarget
-  _target: {fileID: 6026590836681884799}
+  _target: {fileID: 127451193}
   _offset: {x: 0, y: 6, z: -14}
   _smoothTime: 0.3
 --- !u!1 &410087039
@@ -448,6 +545,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &890324071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651077696257285961, guid: faaf7a6ba5f1dd246828a1c04f96bd44, type: 3}
+  m_PrefabInstance: {fileID: 5849035396005913113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &890324075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890324071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63e6c4e1c63fd64e88d5f507ba2f3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SailingDemo.WaterFollow
+  _target: {fileID: 127451193}
+  _tileSize: 10
 --- !u!1001 &2141315875787129368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -499,7 +615,7 @@ PrefabInstance:
     - target: {fileID: 1950187679676461887, guid: 36d35b2d9bfc00f44990ec431a5a59bc, type: 3}
       propertyPath: _ship
       value: 
-      objectReference: {fileID: 6026590836681884798}
+      objectReference: {fileID: 127451194}
     - target: {fileID: 7603575476420510879, guid: 36d35b2d9bfc00f44990ec431a5a59bc, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -509,74 +625,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36d35b2d9bfc00f44990ec431a5a59bc, type: 3}
---- !u!1001 &4106397560573616481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.22145
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.50175
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749914321565182685, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876590840033541786, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-      propertyPath: m_Name
-      value: Wind
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
---- !u!114 &4106397560573616482 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6946014597294488129, guid: 859dc1c3086b6d34eb8a915448adc2a5, type: 3}
-  m_PrefabInstance: {fileID: 4106397560573616481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a1a26667089abe4cb179c1f1afd123d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SailingDemo.WindSystem
 --- !u!1001 &5849035396005913113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,89 +680,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651077696257285961, guid: faaf7a6ba5f1dd246828a1c04f96bd44, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 890324075}
   m_SourcePrefab: {fileID: 100100000, guid: faaf7a6ba5f1dd246828a1c04f96bd44, type: 3}
---- !u!1001 &6026590836681884797
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1172315126951183124, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: _wind
-      value: 
-      objectReference: {fileID: 4106397560573616482}
-    - target: {fileID: 1172315126951183124, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: _sailRotateSpeed
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900701583806381404, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-      propertyPath: m_Name
-      value: Ship
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
---- !u!114 &6026590836681884798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1172315126951183124, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-  m_PrefabInstance: {fileID: 6026590836681884797}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da10df130013224d88fb2680e8d07fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SailingDemo.ShipController
---- !u!4 &6026590836681884799 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6251320568910950374, guid: 82e35295411f0a546b7e4af8fde7f1b8, type: 3}
-  m_PrefabInstance: {fileID: 6026590836681884797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -724,5 +694,5 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 2141315875787129368}
   - {fileID: 5849035396005913113}
-  - {fileID: 6026590836681884797}
-  - {fileID: 4106397560573616481}
+  - {fileID: 127451193}
+  - {fileID: 126915233}
